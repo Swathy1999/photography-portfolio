@@ -317,116 +317,135 @@ footer {
 
 /* Responsive */
 
-@media(max-width:992px) {
+/* ===========================
+   Responsive Design
+=========================== */
 
-    .hero h1 {
+/* Tablets */
+@media (max-width: 992px) {
 
-        font-size: 3rem;
-
+    .carousel-img {
+        height: 70vh;
     }
 
-    .hero {
+    .carousel-caption {
+        bottom: 18%;
+    }
 
-        padding: 80px 20px;
+    .carousel-caption h1 {
+        font-size: 2.8rem;
+    }
 
+    .carousel-caption p {
+        font-size: 1.1rem;
     }
 
     .service img {
-
         height: 220px;
-
     }
-
 }
 
+/* Mobile */
+@media (max-width: 768px) {
 
-@media(max-width:768px) {
-
-    .hero {
-
-        min-height: 70vh;
-
+    .carousel-img {
+        height: 60vh;
     }
 
-    .hero h1 {
-
-        font-size: 2.4rem;
-
+    .carousel-caption {
+        bottom: 15%;
     }
 
-    .hero p {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
 
+    .carousel-caption p {
         font-size: 1rem;
+    }
 
+    .carousel-caption .btn {
+        padding: 10px 20px;
+        font-size: .95rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .brand-icon {
+        font-size: 28px;
+        width: 35px;
+        height: 35px;
     }
 
     .counter {
-
-        font-size: 2.2rem;
-
+        font-size: 2rem;
     }
 
     .input-group {
-
+        display: flex;
         flex-direction: column;
-        border-radius: 15px;
+        gap: 10px;
         box-shadow: none;
-
     }
 
-    .input-group .form-control {
-
-        border-radius: 12px;
-        margin-bottom: 12px;
-
-    }
-
+    .input-group .form-control,
     .input-group .btn {
-
         width: 100%;
-        border-radius: 12px;
-
+        border-radius: 10px !important;
     }
 
+    .service img,
     #gallery img {
-
         height: 220px;
-
     }
 
+    #contact .row {
+        row-gap: 2rem;
+    }
 }
 
+/* Small Phones */
+@media (max-width:576px) {
 
-@media(max-width:576px) {
+    .carousel-img {
+        height: 50vh;
+    }
+
+    .carousel-caption {
+        bottom: 12%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: .9rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: .9rem;
+        padding: 8px 18px;
+    }
 
     .navbar-brand {
-
-        font-size: 1.3rem;
-
+        font-size: 1rem;
     }
 
-    .hero h1 {
-
-        font-size: 2rem;
-
+    .brand-icon {
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
     }
 
-    .hero .btn {
-
-        width: 100%;
-
-    }
-
-    .service img {
-
-        height: 200px;
-
+    .service img,
+    #gallery img {
+        height: 180px;
     }
 
     .package {
-
         margin-bottom: 20px;
-
     }
-
 }
